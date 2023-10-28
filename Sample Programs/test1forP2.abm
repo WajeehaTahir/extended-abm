@@ -1,0 +1,61 @@
+.data
+.int d1 d2 d3
+.text
+show d1 = 5;
+lvalue d1
+push 5
+:=
+show d2 = 6;
+lvalue d2
+push 6
+:=
+show d3 = 7;
+lvalue d3
+push 7
+:=
+show ----------------------------------------
+show Data loaded:
+show d1 = 
+rvalue d1
+print
+pop
+show d2 = 
+rvalue d2
+print
+pop
+show d3 =
+rvalue d3
+print
+pop
+
+show ----------------------------------------
+lvalue temp
+lvalue d1
+show Now we add 1 to d1's address, so that we can manipulate the show value of d2
+push 1
++
+:&
+show Now we store data in temp. It's value is 88. Now we can also show set this value to d2
+rvalue temp
+push 88
+:=
+show So that the d2's value is:
+rvalue d2
+print
+pop
+show ----------------------------------------
+lvalue temp
+lvalue d3
+show Now we subtract 2 from d3's address. We can manipulate the show value of d1
+push 2
+-
+:&
+show Now we store data in temp. It's value is 66. Now we can set show this value to d1
+rvalue temp
+push 66
+:=
+show So that the d1's value is:
+rvalue d1
+print
+pop
+halt

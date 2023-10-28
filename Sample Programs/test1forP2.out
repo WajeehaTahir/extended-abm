@@ -1,0 +1,21 @@
+d1 = 5;
+d2 = 6;
+d3 = 7;
+----------------------------------------
+Data loaded:
+d1 =
+5
+d2 =
+6
+d3 =
+7
+----------------------------------------
+Now we add 1 to d1's address, so that we can manipulate the show value of d2
+Now we store data in temp. It's value is 88. Now we can also show set this value to d2
+So that the d2's value is:
+88
+----------------------------------------
+Now we subtract 2 from d3's address. We can manipulate the show value of d1
+Now we store data in temp. It's value is 66. Now we can set show this value to d1
+So that the d1's value is:
+66
